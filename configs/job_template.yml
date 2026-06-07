@@ -1,0 +1,17 @@
+---
+controller_job_templates:
+  - name: "RHEL Compliance Audit"
+    description: "Applies security baselines and generates audit reports"
+    image: "Default execution environment" # ee-supported-rhel9:latest # Execution environment
+    inventory: "Production_Inventory"
+    project: "Infrastructure_As_Code_Repo"
+    playbook: "playbooks/compliance_audit.yml"
+    job_type: "run"
+    # become_enabled: true
+    credentials:
+      - "Machine-SSH-Key"
+      - "Vault-Credentials"
+    extra_vars:
+      environment_type: "production"
+      compliance_standard: "cis_level_1"
+    survey_enabled: true
