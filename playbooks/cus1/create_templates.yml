@@ -1,0 +1,10 @@
+---
+- name: Apply AAP 2.6 Controller Settings
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars_files:
+    - configs/auth.yml         # Encrypted AAP credentials
+    - configs/job_templates.yml # Your templates definition
+  roles:
+    - role: infra.aap_configuration.job_templates
