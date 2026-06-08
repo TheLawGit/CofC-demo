@@ -7,7 +7,7 @@ controller_job_templates:
     project: "Demo Project"
     playbook: "hello_world.yml"
     job_type: "run"
-    organization: "default"
+    organization: "Default"
     become_enabled: true
     credentials:
       - "Demo Credential"
