@@ -1,4 +1,4 @@
-- name: Configure AAP
+- name: "Configure Customer {{ env }} AAP"
   hosts: localhost
   gather_facts: false    
   tasks:
