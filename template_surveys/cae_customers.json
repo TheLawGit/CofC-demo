@@ -20,7 +20,7 @@
       "default": "",
       "max": 0,
       "required": true,
-      "choices": "v1\nv2",
+      "choices": "v1\nv2\nv3",
       "new_question": true,
       "variable": "version",
       "question_name": "Select the version to push",
