@@ -25,5 +25,4 @@ spec:
     - v2
   new_question: true
   variable: version
-
   type: multiplechoice
