@@ -11,7 +11,6 @@
     - name: Load environment-specific configuration
       ansible.builtin.include_vars:
         dir: "config/{{ version }}"
-        #dir: "config/cus1"
         extensions:
           - 'yml'
       # Example: Run with `ansible-playbook playbook.yml -e "env=prod"`
