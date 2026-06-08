@@ -3,3 +3,4 @@ controller_projects:
 - name: "{{ env }}"
   organization: "{{ env }}"
   update_project: true
+  scm_update_on_launch: 'no'
