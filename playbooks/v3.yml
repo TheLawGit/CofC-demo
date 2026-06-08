@@ -1,0 +1,6 @@
+- name: CAE Version 3
+  hosts: all
+  tasks:
+    - name: Test Message
+      debug:
+        msg: "I am CAE Version 3"
