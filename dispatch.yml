@@ -3,9 +3,10 @@
   gather_facts: false
 
   vars:
-    - env: "cus1"
-    - request_timeout: 60
-    - aap_request_timeout: 60
+    env: "cus1"
+    request_timeout: 60
+    aap_request_timeout: 60
+    
   tasks:
     #- name: Load all common configuration
     #  ansible.builtin.include_vars:
