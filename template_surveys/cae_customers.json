@@ -8,7 +8,7 @@
         "default": "",
         "max": 0,
         "required": true,
-        "choices": "cus1/ncus2",
+        "choices": "cus1\ncus2",
         "new_question": true,
         "variable": "env",
         "question_name": "Customer to Push Updates",
