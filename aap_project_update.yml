@@ -1,0 +1,9 @@
+- name: Update Project using AWX Collection
+  hosts: localhost
+  tasks:
+    - name: Trigger update
+      awx.awx.project_update:
+        id: 14
+        controller_host: "https://example.com"
+        controller_oauthtoken: "{{ aap_token }}"
+        validate_certs: false
