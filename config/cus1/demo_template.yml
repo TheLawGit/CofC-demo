@@ -7,7 +7,7 @@ controller_templates:
     project: "Demo Project"
     playbook: "hello_world.yml"
     job_type: "run"
-    organization: "Default"
+    organization: "{{ env }}"
     #become_enabled: true
     credentials: "Demo Credential"
     #extra_vars:
