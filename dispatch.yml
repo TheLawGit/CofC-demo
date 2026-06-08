@@ -4,6 +4,7 @@
 
   vars:
     - env: "cus1"
+    - request_timeout: 10
   tasks:
     #- name: Load all common configuration
     #  ansible.builtin.include_vars:
