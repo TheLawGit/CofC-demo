@@ -1,8 +1,20 @@
 ---
 controller_projects:
-- name: "{{ env }}"
-  organization: "{{ env }}"
+- name: cus1
+  organization: cus1
   update_project: true
+  scm_branch: cus1
+  scm_clean: 'yes'
+  scm_delete_on_update: 'yes'
+  scm_type: git
   scm_update_on_launch: 'no'
-  scm_clean: 'no'
-  scm_delete_on_update: 'no'
+  scm_url: https://github.com/TheLawGit/CofC-demo.git
+- name: cus2
+  organization: cus2
+  update_project: true
+  scm_branch: cus2
+  scm_clean: 'yes'
+  scm_delete_on_update: 'yes'
+  scm_type: git
+  scm_update_on_launch: 'no'
+  scm_url: https://github.com/TheLawGit/CofC-demo.git
