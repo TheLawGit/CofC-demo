@@ -1,5 +1,5 @@
 ---
-controller_job_templates:
+controller_job_templates_cus1:
   - name: "Test Template"
     description: "Applies security baselines and generates audit reports"
     image: "Default execution environment" # ee-supported-rhel9:latest # Execution environment
