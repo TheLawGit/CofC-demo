@@ -1,7 +1,7 @@
 ---
 - name: Apply AAP 2.6 Controller Settings
-  hosts: all
-  #connection: local
+  hosts: localhost
+  connection: local
   gather_facts: false
   vars_files:
     #- configs/auth.yml       
