@@ -1,0 +1,11 @@
+---
+controller_projects:
+- name: gitea-aap1
+  organization: Default
+  update_project: true
+  #scm_branch: main
+  scm_clean: 'yes'
+  scm_delete_on_update: 'yes'
+  scm_type: git
+  scm_update_on_launch: 'no'
+  scm_url: https://github.com/TheLawGit/CofC-demo.git
