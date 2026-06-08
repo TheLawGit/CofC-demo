@@ -4,3 +4,5 @@ controller_projects:
   organization: "{{ env }}"
   update_project: true
   scm_update_on_launch: 'no'
+  scm_clean: 'no'
+  scm_delete_on_update: 'no'
