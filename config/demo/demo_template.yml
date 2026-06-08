@@ -1,0 +1,14 @@
+---
+controller_templates:
+  - name: "Test Template"
+    description: "Test AAP Config as Code"
+    image: "Default execution environment" # ee-supported-rhel9:latest # Execution environment
+    inventory: "Demo Inventory"
+    project: "Demo Project"
+    playbook: "hello_world.yml"
+    job_type: "run"
+    organization: "{{ env }}"
+    #become_enabled: true
+    credentials: "Demo Credential"
+    #extra_vars:
+    #survey_enabled: false
