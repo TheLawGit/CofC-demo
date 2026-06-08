@@ -1,0 +1,14 @@
+---
+controller_templates:
+  - name: "V1 Template"
+    description: "V1"
+    image: "Default execution environment" # ee-supported-rhel9:latest # Execution environment
+    inventory: "Demo Inventory"
+    project: "{{ env }}"
+    playbook: "v1.yml"
+    job_type: "run"
+    organization: "{{ env }}"
+    #become_enabled: true
+    credentials: "Demo Credential"
+    #extra_vars:
+    #survey_enabled: false
