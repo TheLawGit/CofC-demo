@@ -1,0 +1,23 @@
+---
+- name: Create a test IR
+  hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: Create a test IR
+    servicenow.itsm.incident:
+     # instance:
+     #   host: "{{ SN_HOST }}"
+     #   username: "{{ SN_USERNAME }}"
+     #   password: "{{ SN_PASSWORD }}"
+      state: new
+      short_description: "{{ short_desc }}"
+      description: "{{ desc }}"
+      caller: "alaidlaw"
+    register: snow_ir
+  - name: Show S-NOW IR
+    debug:
+      var: snow_ir.record.number
+  - name: Set S-NOW IR Stat
+    set_stats:
+      data:
+        snow_ir_stat: "{{ snow_ir.record.number }}"
