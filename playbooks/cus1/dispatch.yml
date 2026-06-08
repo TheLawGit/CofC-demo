@@ -5,11 +5,11 @@
   vars:
     - env: "cus1"
   tasks:
-    - name: Load all common configuration
-      ansible.builtin.include_vars:
-        dir: "config/all"
-        extensions:
-          - 'yml'
+    #- name: Load all common configuration
+    #  ansible.builtin.include_vars:
+    #    dir: "config/all"
+    #    extensions:
+    #      - 'yml'
 
     - name: Load environment-specific configuration
       ansible.builtin.include_vars:
