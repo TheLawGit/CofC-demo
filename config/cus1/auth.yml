@@ -1,0 +1,5 @@
+---
+aap_hostname: aap27-aap2.apps.rosa.rosa-95dth.xldz.p3.openshiftapps.com
+aap_username: admin
+aap_password: 11Di$tro
+aap_validate_certs: false
