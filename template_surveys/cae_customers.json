@@ -1,0 +1,30 @@
+
+    "name": "CAE Customer Survey",
+    "description": "Template for pushing versions to CAE customers",
+    "spec": [
+      {
+        "question_description": "Choose the customer the updates will be pushed to",
+        "min": 0,
+        "default": "",
+        "max": 0,
+        "required": true,
+        "choices": "cus1/ncus2",
+        "new_question": true,
+        "variable": "env",
+        "question_name": "Customer to Push Updates",
+        "type": "multiplechoice"
+      },
+      {
+        "question_description": "",
+        "min": 0,
+        "default": "",
+        "max": 0,
+        "required": true,
+        "choices": "v1\nv2",
+        "new_question": true,
+        "variable": "version",
+        "question_name": "Select the version to push",
+        "type": "multiplechoice"
+      }
+    ]
+  }
