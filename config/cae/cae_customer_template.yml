@@ -14,4 +14,4 @@ controller_templates:
       aap_request_timeout: 60
       aap_configuration_async_delay: 3
     survey_enabled: true
-    "{{ lookup('template', 'template_surveys/cae_customers.json') | regex_replace('\\n', '') }}"
+    survey: "{{ lookup('template', 'template_surveys/cae_customers.json') | regex_replace('\\n', '') }}"
